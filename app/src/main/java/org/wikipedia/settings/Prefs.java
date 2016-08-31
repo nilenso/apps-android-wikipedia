@@ -310,7 +310,7 @@ public final class Prefs {
     @NonNull
     public static String getRestbaseUriFormat() {
         return StringUtil.defaultIfBlank(getString(R.string.preference_key_restbase_uri_format, null),
-                "%1$s://%2$s/api/rest_v1/");
+                "%1$s://%2$s/restbase/rest_v1/");
     }
 
     @NonNull
