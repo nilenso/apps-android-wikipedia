@@ -408,7 +408,7 @@ public final class Prefs {
     }
 
     public static boolean isLinkPreviewEnabled() {
-        return getBoolean(R.string.preference_key_show_link_previews, true);
+        return getBoolean(R.string.preference_key_show_link_previews, false);
     }
 
     public static int getReadingListSortMode(int defaultValue) {
