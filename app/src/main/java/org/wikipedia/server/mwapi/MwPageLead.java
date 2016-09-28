@@ -13,7 +13,6 @@ import org.wikipedia.page.PageTitle;
 import org.wikipedia.page.Section;
 import org.wikipedia.server.PageLead;
 import org.wikipedia.server.PageLeadProperties;
-import org.wikipedia.server.Protection;
 import org.wikipedia.util.log.L;
 
 import java.util.List;
@@ -114,7 +113,6 @@ public class MwPageLead implements PageLead {
         @SuppressWarnings("unused") @Nullable private String description;
         @SuppressWarnings("unused") @Nullable private Image image;
         @SuppressWarnings("unused") @Nullable private Thumb thumb;
-        @SuppressWarnings("unused") @Nullable private Protection protection;
         @SuppressWarnings("unused") @Nullable private List<Section> sections;
 
         /** Converter */
@@ -198,7 +196,7 @@ public class MwPageLead implements PageLead {
         @Override
         @Nullable
         public String getFirstAllowedEditorRole() {
-            return protection != null ? protection.getFirstAllowedEditorRole() : null;
+            return null;
         }
 
         @Override
