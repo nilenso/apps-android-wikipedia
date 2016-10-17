@@ -15,7 +15,7 @@ public final class MainPageNameData {
     private static void setupData() {
         final int size = 295;
         DATA_MAP = new HashMap<>(size, 1.0f);
-        DATA_MAP.put("en", "Main Page");
+        DATA_MAP.put("en", "Sustainable Oil Palm Farming");
         DATA_MAP.put("sv", "Portal:Huvudsida");
         DATA_MAP.put("ceb", "Unang Panid");
         DATA_MAP.put("de", "Wikipedia:Hauptseite");
