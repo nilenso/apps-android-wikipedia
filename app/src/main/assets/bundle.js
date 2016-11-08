@@ -487,7 +487,7 @@ bridge.registerListener( "displayLeadSection", function( payload ) {
     transformer.transform( "setDivWidth", content ); // offsetWidth
 
     if (!window.isMainPage) {
-        transformer.transform( "hideTables", content ); // clickHandler
+        // transformer.transform( "hideTables", content ); // clickHandler
         transformer.transform( "addImageOverflowXContainers", content ); // offsetWidth
 
         if (!window.isNetworkMetered) {
@@ -562,7 +562,7 @@ function elementsForSection( section ) {
     transformer.transform( "hideRefs", content ); // clickHandler
 
     if (!window.isMainPage) {
-        transformer.transform( "hideTables", content ); // clickHandler
+        // transformer.transform( "hideTables", content ); // clickHandler
         transformer.transform( "addImageOverflowXContainers", content ); // offsetWidth
 
         if (!window.isNetworkMetered) {
